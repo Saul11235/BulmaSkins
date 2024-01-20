@@ -1,0 +1,19 @@
+//
+// custom green light style here
+//
+//---------------------------------------
+
+$bulmaskin_var: green; // <-- custom color
+$colors: mergeColorMaps(
+    (    
+    "primary": (
+            $bulmaskin_var,
+            $white,
+        ),
+    ),
+    $custom-colors
+);
+$link: $bulmaskin_var;
+$body-background-color: white;
+
+            
