@@ -16,7 +16,7 @@ Bulmaskins is an project based on Bulma
 # -----------------------------------------------------------------------
 
 def get_line_readme(skin):
-    return f"""-  [![ Preview {skin} ](https://img.shields.io/badge/-Preview_{skin}-red)](https://saul11235.github.io/BulmaSkins?skin={skin})
+    return f"""-  [![ Preview {skin} ](https://img.shields.io/badge/-Preview_{skin}-blue)](https://saul11235.github.io/BulmaSkins?skin={skin})
 [![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin={skin}&dark=false)
 [![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin={skin}&dark=true)""".replace("\n","")
 
