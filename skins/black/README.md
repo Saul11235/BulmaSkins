@@ -41,4 +41,4 @@ in end of body element:
 ## Credits and more 
 [![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
 [![By Edwin Saul](https://img.shields.io/badge/-By_Edwin_Saul-black)](https://edwinsaul.com)
-[![More BulmaSkins](https://img.shields.io/badge/-More_BulmaSkins-white)](https://github.com/Saul11235/BulmaSkins)
+[![More](https://img.shields.io/badge/-More-white)](https://github.com/Saul11235/BulmaSkins)

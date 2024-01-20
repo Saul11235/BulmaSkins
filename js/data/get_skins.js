@@ -1,4 +1,4 @@
 // no code manually this file is generated
 function get_name_skins() {
- return ['black','green','purple','red'];
+ return ['black','blue','blue2','purple','red'];
 }
