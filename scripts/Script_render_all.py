@@ -9,3 +9,5 @@ for namestyle in getSkins():
     system(f"sass ../skins/{namestyle}/{namestyle}.dark.scss  ../css/{namestyle}.dark.css  --style compressed")
     print("render "+namestyle+" ok!")
 
+if __name__=="__main__":
+    import Script_rewrite_readme
