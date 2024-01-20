@@ -1,24 +1,24 @@
-# green            
+# darkred            
 a Theme for Bulma part of BulmaSkins             
-[![ Preview green ](https://img.shields.io/badge/-Preview_green-red)](https://saul11235.github.io/BulmaSkins?skin=green)
-[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin=green&dark=false)
-[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin=green&dark=true)
+[![ Preview darkred ](https://img.shields.io/badge/-Preview_darkred-red)](https://saul11235.github.io/BulmaSkins?skin=darkred)
+[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin=darkred&dark=false)
+[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin=darkred&dark=true)
 ## adding in your project
 if you what to use this theme in your project put this in your html doc:
-### green-light via CDN
+### darkred-light via CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/green.light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/darkred.light.css">
 ```
-### green-dark via CDN
+### darkred-dark via CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/green.dark.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/darkred.dark.css">
 ```
-### green whith switch-color via CDN
+### darkred whith switch-color via CDN
 in head element:
 ```html
-<!-- begin BulmaSkins - green -->
-<link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/green.light.css">
-<link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/green.dark.css">
+<!-- begin BulmaSkins - darkred -->
+<link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/darkred.light.css">
+<link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/darkred.dark.css">
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script>
 ```
 creating a button to manage the switch themes, in body:            

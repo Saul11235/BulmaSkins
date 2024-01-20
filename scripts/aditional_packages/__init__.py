@@ -186,8 +186,10 @@ in end of body element:
 <!-- end BulmaSkins -->
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>
 ```
+## Credits and more 
 [![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
 [![By Edwin Saul](https://img.shields.io/badge/-By_Edwin_Saul-black)](https://edwinsaul.com)
+[![More BulmaSkins](https://img.shields.io/badge/-More_BulmaSkins-white)](https://github.com/Saul11235/BulmaSkins/tree/main/skins)
 """
 #--------------------------------------------------------
  
