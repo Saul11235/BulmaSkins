@@ -1,12 +1,8 @@
-# js  BulmaSkins
-scripts to use in web aplications
+# js  BulmaSkins html
+js render html components for use in BulmaSkins web aplication.
 
-### cdn
-- js for use in cdn services.
-### data
-- js for manage skins name for use in BulmaSkins web aplications.
-### html
-- js render html components for use in BulmaSkins web aplication.
+### get-html-reel
+- js get all Bulma native components for demo reel.
 
 ## Credits
 [![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
