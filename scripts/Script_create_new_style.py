@@ -17,5 +17,7 @@ if not isSkin(name) :
     writeFilepath(f"../skins/{name}","render_script.py",python_script(name))
 
     import Script_create_js_nameSkins
+    import Script_rewrite_readme
+
     system(f"vifm ../skins/{name}")
 

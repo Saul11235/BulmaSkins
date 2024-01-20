@@ -7,13 +7,13 @@ print("> Render All css files! ")
 # -----------------------------------------------------------------------
 
 t1="""# Bulmaskins
-a collection for themes for Bulma
+is a collection of themes for bulma, available via CDN."""
 
-"""
 t2="""## Credits
-Bulmaskins is an project based on Bulma 
 [![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
-[![By Edwin Saul](https://img.shields.io/badge/-By_Edwin_Saul-black)](https://edwinsaul.com) """
+[![By Edwin Saul](https://img.shields.io/badge/-By_Edwin_Saul-black)](https://edwinsaul.com)
+is an project based on 
+[![Bulma](https://img.shields.io/badge/-Bulma-red)](https://bulma.io/)"""
 
 # -----------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ def get_central_text():
     list_data=[]
     for skin in getSkins():
         list_data.append(get_line_readme(skin))
-    return "\n".join(list_data)+2*"\n"
+    return 2*"\n".join(list_data)+2*"\n"
 
 # -----------------------------------------------------------------------
 
