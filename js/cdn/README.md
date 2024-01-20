@@ -3,8 +3,6 @@
 
 to config and use BulmaSkins-switch dark/light themes in your html file via CDN
 
----
-
 [![See all skins](https://img.shields.io/badge/-See_all_skins-red)](https://github.com/Saul11235/BulmaSkins)
 
 ## how to use

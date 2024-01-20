@@ -148,7 +148,6 @@ def test_dark_html(nameStyle):
 def readme(nameStyle):
     return f"""# {nameStyle}            
 a Theme for Bulma part of BulmaSkins             
-\n---\n
 [![ Preview {nameStyle} ](https://img.shields.io/badge/-Preview_{nameStyle}-red)](https://saul11235.github.io/BulmaSkins?skin={nameStyle})
 [![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin={nameStyle}&dark=false)
 [![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin={nameStyle}&dark=true)

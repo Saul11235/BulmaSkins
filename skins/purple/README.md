@@ -1,8 +1,5 @@
 # purple            
 a Theme for Bulma part of BulmaSkins             
-
----
-
 [![ Preview purple ](https://img.shields.io/badge/-Preview_purple-red)](https://saul11235.github.io/BulmaSkins?skin=purple)
 [![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin=purple&dark=false)
 [![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin=purple&dark=true)

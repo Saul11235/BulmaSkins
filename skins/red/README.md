@@ -1,8 +1,5 @@
 # red            
 a Theme for Bulma part of BulmaSkins             
-
----
-
 [![ Preview red ](https://img.shields.io/badge/-Preview_red-red)](https://saul11235.github.io/BulmaSkins?skin=red)
 [![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin=red&dark=false)
 [![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin=red&dark=true)
