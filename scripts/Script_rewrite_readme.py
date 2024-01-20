@@ -2,6 +2,8 @@
 
 from aditional_packages import *
 
+print("> Render All css files! ")
+
 # -----------------------------------------------------------------------
 
 t1="""# Bulmaskins
@@ -27,11 +29,16 @@ def get_central_text():
     list_data=[]
     for skin in getSkins():
         list_data.append(get_line_readme(skin))
-    return "\n".join(list_data)+"\n"
+    return "\n".join(list_data)+2*"\n"
 
 # -----------------------------------------------------------------------
 
 writeFilepath("../"     ,"README.md",t1+get_central_text()+t2)
 writeFilepath("../skins","README.md",t1+get_central_text()+t2)
 writeFilepath("../css"  ,"README.md",t1+get_central_text()+t2)
- 
+
+# -----------------------------------------------------------------------
+
+if __name__=="__main__":
+    import Script_create_js_nameSkins
+
