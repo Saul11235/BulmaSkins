@@ -38,6 +38,3 @@ writeFilepath("../css"  ,"README.md",t1+get_central_text()+t2)
 
 # -----------------------------------------------------------------------
 
-if __name__=="__main__":
-    import Script_create_js_nameSkins
-
