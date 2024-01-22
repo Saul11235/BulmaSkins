@@ -21,22 +21,18 @@ in head element:
 <link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/black.dark.css">
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script>
 ```
-creating a button to manage the switch themes, in body:            
-```html
-<!-- BulmaSkins-switch -->
-<button id="BulmaSkins-switch" class="button is-primary">
- <div id="BulmaSkins-switch-light">
-   Light
- </div>
- <div id="BulmaSkins-switch-dark" style="display:none">
-   Dark
- </div>
-</button>
-```
 in end of body element:            
 ```html
 <!-- end BulmaSkins -->
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>
+```
+creating a button to manage the switch themes, in body:            
+```html
+<!-- BulmaSkins-switch -->
+<button id="BulmaSkins-switch" class="button is-primary">
+ <div id="BulmaSkins-switch-light"> Light </div>
+ <div id="BulmaSkins-switch-dark" style="display:none"> Dark </div>
+</button>
 ```
 ## Credits and more 
 [![Bulma skins](https://img.shields.io/badge/-Bulma_skins-blue)](https://saul11235.github.io/BulmaSkins/)
