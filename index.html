@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>BulmaSkins View</title>
+    <!-- begin BulmaSkins - purple -->
+    <link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/purple.light.css">
+    <link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/purple.dark.css">
+    <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script>
 </head>
 <body>
     <!-- Encabezado -->
@@ -17,6 +20,9 @@
     <div class="container">
       <!-- Tu contenido va aquí -->
       <div class="content">
+	<div class="block">
+	  <h1 id="label_skin_name" class="title"> </h1>
+	</div>
 
 	<div class="block">
 	<strong class="is-size-3">
@@ -31,19 +37,31 @@
 
 	<div class="block">
 
-	<strong class="is-size-5 is-spaced">
+
+	<!-- ------------------------------------------------------ -->
+
+<!-- BulmaSkins-switch -->
+<div class="block">
+<button id="BulmaSkins-switch" class="button ">
+ <div id="BulmaSkins-switch-light">
+   Light
+ </div>
+ <div id="BulmaSkins-switch-dark" style="display:none">
+   Dark
+ </div>
+</button>
+</div>
+
+
+	<!-- ------------------------------------------------------ -->
+
+	<strong class="is-size-5 is-spaced is-is-outlined">
 	  <span>
           black-light via CDN
 	  </span>
-	  <button class="icon button is-primary "> 
-            <i class="bi bi-copy"></i>
-	  </button>
+	  <button id="copy-light" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
 	</strong> 
-
-
-	<div class="notification is-light" style="padding:8px;overflow-x:auto;white-space:nowrap">
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/black.light.css"&gt;
-	</div>
+	  <div id="field-light" class="notification"  style="font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
 	</div>
  
 	<!-- ------------------------------------------------------ -->
@@ -53,14 +71,9 @@
 	  <span>
           black-dark via CDN
 	  </span>
-	  <button class="icon button is-primary "> 
-            <i class="bi bi-copy"></i>
-	  </button>
+	  <button id="copy-dark" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
 	</strong> 
-
-	<div class="notification is-light" style="padding:8px;overflow-x:auto;white-space:nowrap">
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/black.dark.css"&gt;
-	</div>
+	  <div id="field-dark" class="notification"  style="font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
 	</div>
   
 	<!-- ------------------------------------------------------ -->
@@ -74,62 +87,32 @@
 
   	<div class="is-size-5">
              in head element:
-  	  <button class="icon button is-primary "> 
-              <i class="bi bi-copy"></i>
-  	  </button>
+  	    <button id="copy-head" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
   	</div> 
-  	<div class="notification is-light" style="padding:8px;overflow-x:auto;white-space:nowrap">
-&lt;!-- begin BulmaSkins - black --&gt;<br>
-&lt;link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/black.light.css"&gt;<br>
-&lt;link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/black.dark.css"&gt;<br>
-&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"&gt;&lt;/script&gt;
-  	</div>
- 
+
+	  <div id="field-head" class="notification"  style="font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
 
 
   	<div class="is-size-5">
              creating a button to manage the switch themes, in body:
-  	  <button class="icon button is-primary "> 
-              <i class="bi bi-copy"></i>
-  	  </button>
+  	  <button id="copy-button" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
+ 
+                	    
   	</div> 
-  	<div class="notification is-light" style="padding:8px;overflow-x:auto;white-space:nowrap">
-&lt;!-- BulmaSkins-switch --&gt;<br>
-&lt;button id="BulmaSkins-switch" class="button is-primary"&gt;<br>
-&nbsp;&lt;div id="BulmaSkins-switch-light"&gt;<br>
-&nbsp;&nbsp;Light<br>
-&nbsp;&lt;/div&gt;<br>
-&nbsp;&lt;div id="BulmaSkins-switch-dark" style="display:none"&gt;<br>
-&nbsp;&nbsp;Dark<br>
-&nbsp;&lt;/div&gt;<br>
-&lt;/button&gt;
-  	</div>
+
+	  <div id="field-button" class="notification"  style="font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
 
   	<div class="is-size-5">
               in end of body element:
-  	  <button class="icon button is-primary "> 
-              <i class="bi bi-copy"></i>
-  	  </button>
+  	  <button id="copy-body" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
   	</div> 
-  	<div class="notification is-light" style="padding:8px;overflow-x:auto;white-space:nowrap">
-&lt;!-- end BulmaSkins --&gt;<br>
-&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"&gt;&lt;/script&gt;
-  	</div>
+
+	  <div id="field-body" class="notification"  style="font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
 
 	</div>
 	<!-- ------------------------------------------------------ -->
 
  
-	<!-- ------------------------------------------------------ -->
-
- 
-	<!-- ------------------------------------------------------ -->
-
- 
-	<!-- ------------------------------------------------------ -->
-
- 
-	<!-- ------------------------------------------------------ -->
 
      
 
@@ -169,6 +152,10 @@
   </div>
 </footer>
 
+
+<!-- end BulmaSkins -->
+<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>
+<script src="./js/html/config_cdn_elements_in_dom.js"></script>
 
 </body>
 </html>
