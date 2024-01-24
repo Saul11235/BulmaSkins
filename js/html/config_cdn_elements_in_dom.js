@@ -1,7 +1,7 @@
-var nameSkin="Reggaeskin"
+var nameSkin="luxorMango"
 
-/* Set copy buttons actions in DOM */
-
+/* Set copy buttons actions in DOM ------------ */
+function config_DOM() {
 document.getElementById("copy-light").addEventListener("click", function(){
   navigator.clipboard.writeText('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css">'.replace("XXX",nameSkin));
 });
@@ -17,8 +17,12 @@ document.getElementById("copy-head").addEventListener("click", function(){
 document.getElementById("copy-button").addEventListener("click", function(){
   navigator.clipboard.writeText( `<!-- BulmaSkins-switch -->
 <button id="BulmaSkins-switch" class="button is-primary">
- <div id="BulmaSkins-switch-light"> Light </div>
- <div id="BulmaSkins-switch-dark" style="display:none"> Dark </div>
+  <div id="BulmaSkins-switch-light">
+    Light
+  </div>
+  <div id="BulmaSkins-switch-dark" style="display:none">
+    Dark
+  </div>
 </button> `);
 });
 document.getElementById("copy-body").addEventListener("click", function(){
@@ -35,14 +39,23 @@ document.getElementById("field-head" ).innerText=`<!-- begin BulmaSkins - XXX --
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script> `.replace("XXX",nameSkin).replace("XXX",nameSkin).replace("XXX",nameSkin);
 document.getElementById("field-button").innerText=`<!-- BulmaSkins-switch -->
 <button id="BulmaSkins-switch" class="button is-primary">
- <div id="BulmaSkins-switch-light"> Light </div>
- <div id="BulmaSkins-switch-dark" style="display:none"> Dark </div>
+  <div id="BulmaSkins-switch-light">
+    Light
+  </div>
+  <div id="BulmaSkins-switch-dark" style="display:none">
+    Dark
+  </div>
 </button> `;
 document.getElementById("field-body").innerText=`<!-- end BulmaSkins -->
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>`;
+
+/*config labels on DOM*/
 document.getElementById("label_skin_name").innerText=nameSkin;
+document.getElementById("label-dark-cdn").innerText=nameSkin+"-dark via CDN";
+document.getElementById("label-light-cdn").innerText=nameSkin+"-light via CDN";
+document.getElementById("label-switch-cdn").innerText=nameSkin+" whith switch-color via CDN";
+document.getElementById("label-cdn").innerText=nameSkin+" via CDN";
+};
 
-
-
-
-
+// connfig DOM
+config_DOM();
