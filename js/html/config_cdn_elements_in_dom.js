@@ -1,4 +1,4 @@
-var nameSkin="luxorMango"
+var nameSkin="purple"
 
 /* Set copy buttons actions in DOM ------------ */
 function config_DOM() {
@@ -55,6 +55,14 @@ document.getElementById("label-dark-cdn").innerText=nameSkin+"-dark via CDN";
 document.getElementById("label-light-cdn").innerText=nameSkin+"-light via CDN";
 document.getElementById("label-switch-cdn").innerText=nameSkin+" whith switch-color via CDN";
 document.getElementById("label-cdn").innerText=nameSkin+" via CDN";
+
+/*config skin button*/
+document.getElementById("label_skin_github").innerText=nameSkin+" on github";
+document.getElementById("button_skin_github").setAttribute("href","https://github.com/Saul11235/BulmaSkins/tree/main/skins/"+nameSkin);
+
+/*config name html document*/
+document.title=nameSkin;
+
 };
 
 // connfig DOM
