@@ -11,8 +11,10 @@
     <!-- begin BulmaSkins - purple -->
     <link id="BulmaSkins-light" rel="stylesheet">
     <link id="BulmaSkins-dark"  rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script>
+    <script src="./js/data/get_skins.js"></script>
+    <script src="./js/html/get_nameSkin.js"></script>
     <script src="./js/html/config_skin_href.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script>
 </head>
 
 <!-- ---------------------------------------------------------------------------   -->
@@ -36,24 +38,8 @@
 	<div class="navbar-end"> <!--- BEGIN - NAVBAR-END -->
 
 	  <div class="container block"> 
+	  <div id="bulmaskins-dropdown"></div>
 
-<div class="dropdown is-hoverable">
-  <div class="dropdown-trigger">
-    <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu4">
-      <span> LuxorMango</span>
-      <span class="icon is-small">
-        <i class="bi bi-chevron-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </div>
-  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-    <div class="dropdown-content">
-      <div class="dropdown-item">
-        <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
-      </div>
-    </div>
-  </div>
-</div>
        </div>
 
 
@@ -233,6 +219,7 @@
 <!-- end BulmaSkins -->
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>
 <script src="./js/html/config_cdn_elements_in_dom.js"></script>
+<script src="./js/scan_skins/get_html_skin_dropdown.js"></script>
 <script src="./js/html/get_html_reel.js"></script>
 
 </body>
