@@ -7,6 +7,9 @@ var isdark  =urlParams.get("dark")
 /* ------------------------------------ */
 
 console.log("skin");
-console.log(skin);
+console.log(nameSkin);
+if (nameSkin===null) {
+  nameSkin=arrayNameSkins[0];
+}
 
 
