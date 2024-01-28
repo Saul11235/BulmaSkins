@@ -14,7 +14,6 @@ if (skin!=null) {
      console.log("v2_view");
      document.getElementById("BulmaSkins-light").setAttribute("href","https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/"+skin+".light.css");
      document.getElementById("BulmaSkins-dark" ).setAttribute("href","https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/"+skin+".dark.css");
-     document.getElementById("Bulma-default").style.display="none";
      add_script("./js/webapp/v2_view/init.js");
      add_script("./js/webapp/v2_view/config_cdn_elements_in_dom.js");
      add_script("./js/webapp/v2_view/get_html_reel.js");
