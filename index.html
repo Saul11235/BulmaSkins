@@ -1,234 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- ---------------------------------------------------------------------------   -->
-
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>BulmaSkins View</title>
-    <!-- begin BulmaSkins - purple -->
+    <title>Bulmaskins</title>
+    <!-- css cdn files -->
+    <link id="Bulma-default" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link id="BulmaSkins-light" rel="stylesheet">
     <link id="BulmaSkins-dark"  rel="stylesheet">
-    <script src="./js/data/get_skins.js"></script>
-    <script src="./js/html/get_nameSkin.js"></script>
-    <script src="./js/html/config_skin_href.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script>
+    <!-- js files -->
+    <script src="./js/webapp/get_skins.js"></script>
+    <script src="./js/webapp/config_web_app.js"></script>
+    <!-- bosstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
-
-<!-- ---------------------------------------------------------------------------   -->
-
-
 <body>
-
-
- <!-- ========================================================================== -->
-
-
-<div class="hero is-primary is-halfheight">
-
-  <div class="hero-head"> <!-- BEGIN HERO-HEAD -->
-    <nav class="navbar">
-      <div class="container">
-	<div class="navbar-item">
-	  <a class="subtitle" href="https://saul11235.github.io/BulmaSkins/">BulmaSkins</a>
-	</div>
-
-	<div class="navbar-end"> <!--- BEGIN - NAVBAR-END -->
-
-	  <div class="container block"> 
-	  <div id="bulmaskins-dropdown"></div>
-
-       </div>
-
-
-
-
-	</div> <!--- END NAVBAR-END -->
-
-      </div>
-    </nav>
-  </div>  <!-- END HERO-HEAD -->
-
-  <!-- ============================================================ -->
-
-  <div class="hero-body"> <!-- BEGIN HERO-BODY -->
-
- <!-- ----- -->
- <div class="container">
-
-   <div class="columns">
-     <div class="column is-10">
-
-      <div class="block">
-        <h1 id="label_skin_name" class="title" style="font-size:3rem;"> </h1>
-      </div>
-      <br/>
-
-     </div>
-     <div class="column is-2">
-
-        <!-- BulmaSkins-switch -->
-	<br/>
-        <div class="block">
-          <button id="BulmaSkins-switch" class="button ">
-            <div id="BulmaSkins-switch-light"> Light </div>
-            <div id="BulmaSkins-switch-dark" style="display:none"> Dark </div>
-          </button>
+ <noscript>
+  <div id="body">
+    <div class="hero is-dark is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Bulmaskins</h1>
+            <p>Please enable JavaScript to experience the full functionality of this website.</p>
+          <a class="button is-link" href="https://edwinsaul.com">
+            <span>By Edwin Saul</span>
+            <span class="icon"><i class="bi bi-rocket-takeoff"></i></span>
+          </a>
+          <a class="button is-light" href="https://github.com/Saul11235/BulmaSkins">
+            <span>View on github</span>
+            <span class="icon"><i class="bi bi-github"></i></span>
+          </a>
         </div>
-	<!-- ----------------- -->
- 
-     </div>
-
-   </div>
-
-
-
-
-
-     <!-- ---------------------------------------------- -->
-
-   <div class="columns">
-
-     <div class="column is-4">
-
-     <strong class="is-size-4">
-          <span id="label-cdn"></span>
-     </strong> 
-
-    <div class="is-size-6 is-spaced is-is-outlined">
-          <span id="label-light-cdn"></span>
-          <button id="copy-light" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
-     </div> 
-     <div id="field-light" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
-     <div class="is-size-6">
-          <span id="label-dark-cdn"></span>
-          <button id="copy-dark" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
-     </div> 
-     <div id="field-dark" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
-
-     <a id="button_skin_github" class="button is-light" href="https://google.com">
-       <span id="label_skin_github"></span> 
-       <span class="icon"><i class="bi bi-github"></i></span>
-     </a>
- 
-     </div>
-     <!-- ---------------------------------------------- -->
-     <div class="column is-8">
-
-        <strong class="is-size-4">
-          <span id="label-switch-cdn"></span>
-        </strong> 
-
-       <div class="columns">
-	 <!-- ---------------------------------------------- -->
-	 <div class="column is-6">
-
-     <div class="is-size-6">
-          in head element:
-          <button id="copy-head" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
-     </div> 
-     <div id="field-head" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
-     <div class="is-size-6">
-           in end of body element:
-           <button id="copy-body" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
-      </div> 
-      <div id="field-body" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
-
-	 </div>
-
-	 <!-- ---------------------------------------------- -->
-	 <div class="column is-6">
-
-     <div class="is-size-6">
-          creating a button to manage the switch themes, in body:
-          <button id="copy-button" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
-     </div> 
-     <div id="field-button" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
-
-	 </div>
-
-	 <!-- ---------------------------------------------- -->
-       </div>
-     </div>
-   </div>
-   </div>
-
-</div> <!-- hero-body -->
-</div> <!-- hero -->
-
-
-
-
- <!-- ----- -->
-
-
- <div class="container">
- <div class="columns">
-   <!-- -------------------------- col ----------------------- -->
-
-   <div class="column is-4" >
-
-   </div>
-
-   <!-- -------------------------- col ----------------------- -->
-
-   <div class="column is-4">
-
-
-   </div>
-
-   <!-- -------------------------- col ----------------------- -->
-
-   <div class="column is-4">
-
-   </div>
- </div>
- </div>
-
-
- <!-- ----- -->
-
- <div id="put_reel_html_here"></div>
-
- <!-- ----- -->
-
-<footer class="hero is-primary is-small">
-  <div class="hero-body">
-    <div class="container has-text-centered">
-      <div class="block is-spaced">
-        <a class="button is-danger" href="https://saul11235.github.io/BulmaSkins/">
-          <span>BulmaSkins</span>
-          <span class="icon"><i class="bi bi-brush"></i></span>
-        </a>
-        <a class="button is-link" href="https://edwinsaul.com">
-          <span>By Edwin Saul</span>
-          <span class="icon"><i class="bi bi-rocket-takeoff"></i></span>
-        </a>
-        <a class="button is-light" href="https://github.com/Saul11235/BulmaSkins">
-          <span>View on github</span>
-          <span class="icon"><i class="bi bi-github"></i></span>
-        </a>
       </div>
     </div>
+    <!-- switch -->
+    <div id="BulmaSkins-switch" ><div id="BulmaSkins-switch-light"></div><div id="BulmaSkins-switch-dark"></div></div>
   </div>
-</footer>
-
-
-<!-- end BulmaSkins -->
-<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>
-<script src="./js/html/config_cdn_elements_in_dom.js"></script>
-<script src="./js/scan_skins/get_html_skin_dropdown.js"></script>
-<script src="./js/html/get_html_reel.js"></script>
-
+ <!-- end BulmaSkins -->
+ <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>
+ </noscript>
 </body>
-
-<!-- ---------------------------------------------------------------------------   -->
-
 </html>
-
-
-
-
-

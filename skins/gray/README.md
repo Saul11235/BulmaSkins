@@ -1,24 +1,24 @@
-# purple            
+# gray            
 a Theme for Bulma part of BulmaSkins             
-[![ Preview purple ](https://img.shields.io/badge/-Preview_purple-red)](https://saul11235.github.io/BulmaSkins?&skin=purple)
-[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=purple&dark=false)
-[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=purple&dark=true)
+[![ Preview gray ](https://img.shields.io/badge/-Preview_gray-red)](https://saul11235.github.io/BulmaSkins?&skin=gray)
+[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=gray&dark=false)
+[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=gray&dark=true)
 ## adding in your project
 if you what to use this theme in your project put this in your html doc:
-### purple-light via CDN
+### gray-light via CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/purple.light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/gray.light.css">
 ```
-### purple-dark via CDN
+### gray-dark via CDN
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/purple.dark.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/gray.dark.css">
 ```
-### purple whith switch-color via CDN
+### gray whith switch-color via CDN
 in head element:
 ```html
-<!-- begin BulmaSkins - purple -->
-<link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/purple.light.css">
-<link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/purple.dark.css">
+<!-- begin BulmaSkins - gray -->
+<link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/gray.light.css">
+<link id="BulmaSkins-dark"  rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/gray.dark.css">
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script>
 ```
 in end of body element:            

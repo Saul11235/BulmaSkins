@@ -1,8 +1,8 @@
 # green            
 a Theme for Bulma part of BulmaSkins             
-[![ Preview green ](https://img.shields.io/badge/-Preview_green-red)](https://saul11235.github.io/BulmaSkins?skin=green)
-[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin=green&dark=false)
-[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin=green&dark=true)
+[![ Preview green ](https://img.shields.io/badge/-Preview_green-red)](https://saul11235.github.io/BulmaSkins?&skin=green)
+[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=green&dark=false)
+[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=green&dark=true)
 ## adding in your project
 if you what to use this theme in your project put this in your html doc:
 ### green-light via CDN

@@ -1,5 +1,7 @@
 /* Set copy buttons actions in DOM */
 
+var nameSkin=skin;
+
 function config_DOM() {
 /* config copy buttons*/
 document.getElementById("copy-light" ).addEventListener("click", function(){navigator.clipboard.writeText('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css">'.replace("XXX",nameSkin));});

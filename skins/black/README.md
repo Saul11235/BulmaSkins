@@ -1,8 +1,8 @@
 # black            
 a Theme for Bulma part of BulmaSkins             
-[![ Preview black ](https://img.shields.io/badge/-Preview_black-red)](https://saul11235.github.io/BulmaSkins?skin=black)
-[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin=black&dark=false)
-[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin=black&dark=true)
+[![ Preview black ](https://img.shields.io/badge/-Preview_black-red)](https://saul11235.github.io/BulmaSkins?&skin=black)
+[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=black&dark=false)
+[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=black&dark=true)
 ## adding in your project
 if you what to use this theme in your project put this in your html doc:
 ### black-light via CDN

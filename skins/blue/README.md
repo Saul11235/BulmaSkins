@@ -1,8 +1,8 @@
 # blue            
 a Theme for Bulma part of BulmaSkins             
-[![ Preview blue ](https://img.shields.io/badge/-Preview_blue-red)](https://saul11235.github.io/BulmaSkins?skin=blue)
-[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?skin=blue&dark=false)
-[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?skin=blue&dark=true)
+[![ Preview blue ](https://img.shields.io/badge/-Preview_blue-red)](https://saul11235.github.io/BulmaSkins?&skin=blue)
+[![ light mode ](https://img.shields.io/badge/-light_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=blue&dark=false)
+[![ dark mode ](https://img.shields.io/badge/-dark_mode-black)](https://saul11235.github.io/BulmaSkins?&skin=blue&dark=true)
 ## adding in your project
 if you what to use this theme in your project put this in your html doc:
 ### blue-light via CDN
