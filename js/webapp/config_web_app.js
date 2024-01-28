@@ -25,9 +25,13 @@ if (skin!=null) {
 
   } else {
      console.log("v3_error");
+     document.getElementById("BulmaSkins-light").setAttribute("href","https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
+     document.getElementById("BulmaSkins-dark" ).setAttribute("href","https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
      add_script("./js/webapp/v3_error/init.js");
   };
 } else {
   console.log(  "v1_init");
+     document.getElementById("BulmaSkins-light").setAttribute("href","https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
+     document.getElementById("BulmaSkins-dark" ).setAttribute("href","https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
      add_script("./js/webapp/v1_init/init.js");
 };
