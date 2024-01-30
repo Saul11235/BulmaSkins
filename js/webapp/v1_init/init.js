@@ -1,4 +1,5 @@
 console.log("v1: view 1 init");
+var random_skin=arrayNameSkins[ Math.floor(Math.random()*arrayNameSkins.length)];
 
 
 function button_from_skin(nameSkin) {
@@ -47,7 +48,7 @@ document.body.innerHTML=`
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 0px;
 }
 .grid-item {
@@ -56,23 +57,78 @@ document.body.innerHTML=`
   border: 1px solid gray;
   border-radius: 5px;
 }
+.notification {
+  font-size:0.7rem;
+  font-family:monospace;
+  padding:8px;
+  overflow-x:auto;
+  white-space:nowrap;
+  color:white;
+  background-color:black;
+}
 </style>
 
-<div class="hero is-dark is-halftheight">
+<div class="hero is-dark">
 
   <div class="hero-body">
-    <div class="content">
-      <div class="title">
-      BulmaSkins
+    <div class="container">
+      <div class="content">
+        <div class="title has-text-centered">
+          BulmaSkins
+        </div>
+        <p class="has-text-centered">
+          BulmaSkins is an collection for themes maded for 
+	  Bulma
+        </p>
       </div>
     </div>
 
-  <span><br/></span>
-    <div class="content">
+    </br>
+
+    <div class="container">
       `+buttons+`
+    </div>
+    <br>
+
+    <div class="container">
+      <div class="content">
+          <p class="has-text-centered"> in this example will be use the skin XXX </p>
+        <h1 class="subtitle">How to use:</h1>
+          <p>to config and use BulmaSkins you can use this from CDN, pick and view</p>
+          <div>
+            <span>XXX light theme via CDN</span>
+	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+	  </div>
+          <div id="field-light" class="notification"></div>
+          <div>
+            <span>XXX dark theme via CDN</span>
+	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+	  </div>
+          <div id="field-light" class="notification"></div>
+
+        <h1 class="subtitle">How to use whit an light/dark switch theme:</h1>
+          <div>
+            <span>in head element:</span>
+	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+	  </div>
+          <div id="field-light" class="notification"></div>
+          <div>
+            <span>creating a button to manage the switch themes, in body:</span>
+	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+	  </div>
+          <div id="field-light" class="notification"></div>
+          <div>
+            <span>in end of body element</span>
+	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+	  </div>
+          <div id="field-light" class="notification"></div>
+
+       </div>
+      </div>
     </div>
   </div> 
 
+<div class="hero is-dark">
   <div class="hero-foot">
     <div class="container has-text-centered">
       <div class="block is-spaced">
@@ -89,8 +145,7 @@ document.body.innerHTML=`
       <p>
     </div>
   </div>
-
+  </div>
 </div>
 
-`
-
+`.replace(new RegExp("XXX", 'g'), random_skin);
