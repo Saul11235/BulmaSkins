@@ -3,8 +3,9 @@ console.log("v2: view 2 view skin");
 /*------------------------------------------------------*/
 
 document.body.innerHTML=`
+
 <div class="hero is-primary is-halfheight">
-  <div class="hero-head"> <!-- BEGIN HERO-HEAD -->
+  <div class="hero-head">
     <nav class="navbar">
       <div class="container">
 	<div class="navbar-item">
@@ -56,9 +57,6 @@ document.body.innerHTML=`
      </div>
 
    </div>
-
-
-
 
 
      <!-- ---------------------------------------------- -->
@@ -168,7 +166,7 @@ document.body.innerHTML=`
 
  <!-- ----- -->
 
-<footer class="hero is-primary is-small">
+<footer id="footer-webapp" class="hero is-primary is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
       <div class="block is-spaced">
@@ -192,7 +190,9 @@ document.body.innerHTML=`
 
 <!-- end BulmaSkins -->
 <script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>
-
+<script>
+  style_view_skin();
+</script>
 
 `
 

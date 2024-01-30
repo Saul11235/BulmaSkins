@@ -1,8 +1,8 @@
 /* Set copy buttons actions in DOM */
 
-var nameSkin=skin;
-
 function config_DOM() {
+/*config variable*/
+let nameSkin=skin;
 /* config copy buttons*/
 document.getElementById("copy-light" ).addEventListener("click", function(){navigator.clipboard.writeText('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css">'.replace("XXX",nameSkin));});
 document.getElementById("copy-dark"  ).addEventListener("click", function(){navigator.clipboard.writeText( '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css">'.replace("XXX",nameSkin));});
@@ -32,5 +32,4 @@ document.getElementById("button_skin_github").setAttribute("href","https://githu
 document.title=nameSkin;
 };
 
-// connfig DOM
-config_DOM();
+

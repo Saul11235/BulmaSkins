@@ -9,18 +9,35 @@ function add_script(path){
    document.head.appendChild(external_script);
 
 };
+/*----------------------------------*/
 if (skin!=null) {
   if (arrayNameSkins.includes(skin)){
      console.log("v2_view");
      document.getElementById("BulmaSkins-light").setAttribute("href","https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/"+skin+".light.css");
      document.getElementById("BulmaSkins-dark" ).setAttribute("href","https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/"+skin+".dark.css");
-     add_script("./js/webapp/v2_view/init.js");
-     add_script("./js/webapp/v2_view/config_cdn_elements_in_dom.js");
-     add_script("./js/webapp/v2_view/get_html_skin_dropdown.js");
-     add_script("./js/webapp/v2_view/get_html_reel.js");
-     /*End BulmaSkins*/
-     add_script("https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js");
-
+     function config_view_skin() {
+       add_script("./js/webapp/v2_view/config_cdn_elements_in_dom.js");
+       add_script("./js/webapp/v2_view/get_html_skin_dropdown.js");
+       add_script("./js/webapp/v2_view/init.js");
+       add_script("./js/webapp/v2_view/get_html_reel.js");
+     };
+    function config_style_view(){
+       config_DOM();
+       config_dropdown();
+       add_script("https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js");
+    };
+    config_view_skin()
+    /*DOM sensor*/
+    var run_sensor=true;
+    function DOM_sensor() {
+       if (document.getElementById("footer-webapp")!=null){
+         console.log('web app: view style '+skin);
+	 config_style_view();
+         run_sensor=false;	 
+       };
+    if (run_sensor) {setTimeout(function(){DOM_sensor();}, 50);}
+    }   
+    DOM_sensor();
   } else {
      console.log("v3_error");
      document.getElementById("BulmaSkins-light").setAttribute("href","https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
@@ -33,3 +50,5 @@ if (skin!=null) {
      document.getElementById("BulmaSkins-dark" ).setAttribute("href","https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
      add_script("./js/webapp/v1_init/init.js");
 };
+/*----------------------------------*/
+

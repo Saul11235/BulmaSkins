@@ -1,6 +1,8 @@
 // get_html_skin_dropdown
 // arrayNameSkins
 // nameSkin
+//
+function config_dropdown() {
 var dropdown=document.getElementById("bulmaskins-dropdown");
 
 var text1=`
@@ -15,7 +17,7 @@ var text1=`
   </div>
   <div class="dropdown-menu" id="dropdown-menu4" role="menu">
     <div class="dropdown-content">
-`.replace("XXX",nameSkin);
+`.replace("XXX",skin);
 var text2='';
 var text3=`
     </div>
@@ -33,3 +35,4 @@ for (var i = 0; i < arrayNameSkins.length; i++) {
 
 fulltext=text1+text2+text3;
 dropdown.innerHTML=fulltext;
+}
