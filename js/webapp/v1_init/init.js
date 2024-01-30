@@ -93,35 +93,63 @@ document.body.innerHTML=`
     <div class="container">
       <div class="content">
           <p class="has-text-centered"> in this example will be use the skin XXX </p>
-        <h1 class="subtitle">How to use:</h1>
+        <h1 class="subtitle is-5">How to use:</h1>
           <p>to config and use BulmaSkins you can use this from CDN, pick and view</p>
           <div>
             <span>XXX light theme via CDN</span>
 	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
 	  </div>
-          <div id="field-light" class="notification"></div>
+          <div id="field-light" class="notification">
+            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css"&gt;
+	  </div>
           <div>
             <span>XXX dark theme via CDN</span>
 	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
 	  </div>
-          <div id="field-light" class="notification"></div>
+          <div id="field-light" class="notification">
+            &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css"&gt;
+	  </div>
 
-        <h1 class="subtitle">How to use whit an light/dark switch theme:</h1>
+        <h1 class="subtitle is-5">How to use whit an light/dark switch theme:</h1>
           <div>
             <span>in head element:</span>
 	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
 	  </div>
-          <div id="field-light" class="notification"></div>
+          <div id="field-light" class="notification">
+            &lt;!-- begin BulmaSkins - XXX --&gt;
+            <br>&lt;link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css"&gt;
+            <br>&lt;link id="BulmaSkins-dark" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css"&gt;
+            <br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"&gt;&lt;/script&gt; 
+	  </div>
           <div>
             <span>creating a button to manage the switch themes, in body:</span>
 	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
 	  </div>
-          <div id="field-light" class="notification"></div>
+          <div id="field-light" class="notification">
+&lt;!-- BulmaSkins-switch --&gt;
+<br>&lt;button id="BulmaSkins-switch" class="button is-primary"&gt;
+<br>&lt;div id="BulmaSkins-switch-light"&gt;
+<br>Light
+<br>&lt;/div&gt;
+<br>&lt;div id="BulmaSkins-switch-dark" style="display:none"&gt;
+<br>Dark
+<br>&lt;/div&gt;
+<br>&lt;/button&gt; 
+	  </div>
           <div>
             <span>in end of body element</span>
 	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
 	  </div>
-          <div id="field-light" class="notification"></div>
+          <div id="field-light" class="notification">
+
+
+&lt;!-- end BulmaSkins --&gt;
+<br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"&gt;&lt;/script&gt;
+
+
+
+
+	  </div>
 
        </div>
       </div>
