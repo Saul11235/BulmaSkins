@@ -68,7 +68,7 @@ document.body.innerHTML=`
 }
 </style>
 
-<div class="hero is-dark">
+<div class="hero is-dark is-fullheight">
 
   <div class="hero-body">
     <div class="container">
