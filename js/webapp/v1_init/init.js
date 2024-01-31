@@ -81,16 +81,10 @@ document.body.innerHTML=`
 	  Bulma
         </p>
       </div>
-    </div>
 
-    </br>
 
-    <div class="container">
       `+buttons+`
-    </div>
-    <br>
 
-    <div class="container">
       <div class="content">
           <p class="has-text-centered"> in this example will be use the skin XXX </p>
         <h1 class="subtitle is-5">How to use:</h1>
