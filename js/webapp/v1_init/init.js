@@ -4,17 +4,18 @@ var random_skin=arrayNameSkins[ Math.floor(Math.random()*arrayNameSkins.length)]
 
 function button_from_skin(nameSkin) {
   return `
-<div class="grid-item">
+<div class="grid-item block">
   <div class="container has-text-centered is-centered">
-    <a class="subtitle"
-    href="https://saul11235.github.io/BulmaSkins/?&skin=XXX">
-      XXX
-    </a>
+        <a class="title"
+            href="https://saul11235.github.io/BulmaSkins/?&skin=XXX">
+            XXX
+        </a>
+        <br/><br/>
     <div class="container">
        <div class="buttons has-addons is-centered">
          <a class="button is-link is-small is-rounded"
 	   href="https://saul11235.github.io/BulmaSkins/?&skin=XXX">
-	   <span>preview</span>
+	   <span>view</span>
 	   <span class="icon"> <i class="bi bi-globe"></i> </span>
 	 </a>
          <a class="button is-light is-small is-rounded" 
@@ -23,7 +24,7 @@ function button_from_skin(nameSkin) {
 	   <span class="icon"> <i class="bi bi-github"></i> </span>
 	 </a>
        </div>
-       </div>
+    </div>
   </div>       
 </div>
   `.replace(new RegExp("XXX", 'g'), nameSkin);
@@ -48,11 +49,11 @@ document.body.innerHTML=`
 <style>
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 0px;
 }
 .grid-item {
-  padding: 5px;
+  padding: 20px;
   margin: 4px;
   border: 1px solid gray;
   border-radius: 5px;
@@ -72,6 +73,7 @@ document.body.innerHTML=`
 
   <div class="hero-body">
     <div class="container">
+
       <div class="content">
         <div class="title has-text-centered">
           BulmaSkins
@@ -82,8 +84,10 @@ document.body.innerHTML=`
         </p>
       </div>
 
-
+      <div class="block">
       `+buttons+`
+      </div>
+
 
       <div class="content">
           <p class="has-text-centered"> in this example will be use the skin XXX </p>
