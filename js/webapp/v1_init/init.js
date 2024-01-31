@@ -68,7 +68,7 @@ document.body.innerHTML=`
 }
 </style>
 
-<div class="hero is-dark is-fullheight">
+<div class="hero is-dark">
 
   <div class="hero-body">
     <div class="container">
@@ -120,37 +120,29 @@ document.body.innerHTML=`
 	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
 	  </div>
           <div id="field-light" class="notification">
-&lt;!-- BulmaSkins-switch --&gt;
-<br>&lt;button id="BulmaSkins-switch" class="button is-primary"&gt;
-<br>&lt;div id="BulmaSkins-switch-light"&gt;
-<br>Light
-<br>&lt;/div&gt;
-<br>&lt;div id="BulmaSkins-switch-dark" style="display:none"&gt;
-<br>Dark
-<br>&lt;/div&gt;
-<br>&lt;/button&gt; 
+            &lt;!-- BulmaSkins-switch --&gt;
+            <br>&lt;button id="BulmaSkins-switch" class="button is-primary"&gt;
+            <br>&lt;div id="BulmaSkins-switch-light"&gt;
+            <br>Light
+            <br>&lt;/div&gt;
+            <br>&lt;div id="BulmaSkins-switch-dark" style="display:none"&gt;
+            <br>Dark
+            <br>&lt;/div&gt;
+            <br>&lt;/button&gt; 
 	  </div>
           <div>
             <span>in end of body element</span>
 	    <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
 	  </div>
           <div id="field-light" class="notification">
-
-
-&lt;!-- end BulmaSkins --&gt;
-<br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"&gt;&lt;/script&gt;
-
-
-
-
+            &lt;!-- end BulmaSkins --&gt;
+            <br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"&gt;&lt;/script&gt; 
 	  </div>
 
        </div>
       </div>
     </div>
-  </div> 
 
-<div class="hero is-dark">
   <div class="hero-foot">
     <div class="container has-text-centered">
       <div class="block is-spaced">
@@ -168,6 +160,8 @@ document.body.innerHTML=`
     </div>
   </div>
   </div>
-</div>
+
+
+</div> 
 
 `.replace(new RegExp("XXX", 'g'), random_skin);
