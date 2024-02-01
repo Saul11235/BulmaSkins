@@ -14,6 +14,15 @@ document.body.innerHTML=`
 </style>
 
 <div class="hero is-primary is-halfheight">
+  <div class="block">
+  <div class="container">
+   <div class="navbar-end">
+     <div class="container block" style="position:absolute;"> 
+      <div id="bulmaskins-dropdown"></div>
+     </div>
+   </div>
+   </div>
+  </div>
 
   <div class="hero-head">
     <nav class="navbar">
@@ -23,11 +32,6 @@ document.body.innerHTML=`
           <h1 id="label_skin_name" class="title" style="font-size:4.5rem;padding:30px;"> </h1>
 	  </a>
 	</div>
-	<div class="navbar-end">
-	  <div class="container block"> 
-            <div id="bulmaskins-dropdown"></div>
-          </div>
-        </div>
       </div>
     </nav>
   </div> 
