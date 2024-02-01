@@ -126,13 +126,16 @@ hr {
  <div class="block">
    <div class="content">
      <h1 class="subtitle">why use BulmaSkins</h1>
-     <ul>
-       <li><strong> Effortless Integration: </strong> BulmaSkins seamlessly integrates with Bulma, a modern CSS framework, ensuring compatibility and ease of use in your web development projects. </li>
-       <li><strong> Time-Saving: </strong> By utilizing pre-designed and well-crafted skins, developers can save valuable time on styling, allowing them to focus on other aspects of their projects. </li>
-       <li><strong> Customization: </strong> BulmaSkins offers a starting point for customization, enabling developers to tailor the appearance of their websites according to specific branding or design requirements. </li>
-       <li><strong> Responsive Design: </strong> Built on the foundation of Bulma, BulmaSkins inherits its responsive design principles, ensuring that your web applications look great on various devices and screen sizes. </li>
-       <li><strong> CDN Convenience: </strong> The availability of minified CSS files via CDN ensures fast and reliable delivery, enhancing the performance of your web pages. </li>
-     </ul>
+     <div class="container" style="border:1px solid darkgray;margin:20px;padding:20px;border-radius:25px;">
+       <ul class="padding: 20px;">
+         <li><strong> Effortless Integration: </strong> BulmaSkins seamlessly integrates with Bulma, a modern CSS framework, ensuring compatibility and ease of use in your web development projects. </li>
+         <li><strong> Time-Saving: </strong> By utilizing pre-designed and well-crafted skins, developers can save valuable time on styling, allowing them to focus on other aspects of their projects. </li>
+         <li><strong> Customization: </strong> BulmaSkins offers a starting point for customization, enabling developers to tailor the appearance of their websites according to specific branding or design requirements. </li>
+         <li><strong> Responsive Design: </strong> Built on the foundation of Bulma, BulmaSkins inherits its responsive design principles, ensuring that your web applications look great on various devices and screen sizes. </li>
+         <li><strong> CDN Convenience: </strong> The availability of minified CSS files via CDN ensures fast and reliable delivery, enhancing the performance of your web pages. </li>
+	 <br>
+       </ul>
+     </div>
      <h1 class="subtitle">About BulmaSkins</h1>
     <p>
      BulmaSkins is a collection of skins based on Bulma, accompanied by minified
