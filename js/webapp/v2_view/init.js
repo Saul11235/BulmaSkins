@@ -19,13 +19,15 @@ document.body.innerHTML=`
     <nav class="navbar">
       <div class="container">
 	<div class="navbar-item">
-	  <a class="subtitle" href="https://saul11235.github.io/BulmaSkins/">BulmaSkins</a>
+	  <a href="https://saul11235.github.io/BulmaSkins/">
+          <h1 id="label_skin_name" class="title" style="font-size:4.5rem;padding:30px;"> </h1>
+	  </a>
 	</div>
 	<div class="navbar-end">
 	  <div class="container block"> 
             <div id="bulmaskins-dropdown"></div>
           </div>
-	</div>
+        </div>
       </div>
     </nav>
   </div> 
@@ -33,12 +35,6 @@ document.body.innerHTML=`
  <div class="hero-body">
 
   <div class="container">
-   
-   <div class="container">
-     <br/>
-     <h1 id="label_skin_name" class="title" style="font-size:4.5rem;padding:30px;"> </h1>
-   </div>
-
    <div class="columns is-multiline">
      <div class="column is-4-desktop is-12-tablet">
        <strong class="is-size-4">
@@ -55,13 +51,18 @@ document.body.innerHTML=`
        </div> 
        <div id="field-dark" class="my-code"></div>
        <br>
+       <strong class="is-size-4">
+          <span>View sass code:</span>
+       </strong> 
        <div class="span">
-         <div class="field has-text-centered">
+        <div class="container" style="padding: 10px;">
+         <div class="field ">
            <a id="button_skin_github" class="button is-light" href="https://google.com">
              <span id="label_skin_github"></span> 
              <span class="icon"><i class="bi bi-github"></i></span>
            </a>
          </div>
+	</div> 
        </div>
 
      </div>
@@ -97,13 +98,12 @@ document.body.innerHTML=`
           <button id="copy-button" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
      </div> 
      <div id="field-button" class="my-code"></div>
-     <p> switch color in this template</p>
 
      <br/>
 
       <div class="field has-tex-centered"
         <!-- BulmaSkins-switch -->
-        <div class="field has-text-centered">
+        <div class="field">
           <button id="BulmaSkins-switch" class="button ">
             <div id="BulmaSkins-switch-light"> Light </div>
             <div id="BulmaSkins-switch-dark" style="display:none"> Dark </div>
