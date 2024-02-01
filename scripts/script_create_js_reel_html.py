@@ -8,5 +8,5 @@ def clear(string):
     while "> " in string: string=string.replace("> ",">")
     return string
 
-writeFilepath("../js/webapp","get_html_reel.js", "document.getElementById('put_reel_html_here').innerHTML='"+clear(readFilepath("../js/html","reel.html"))+"'")
+writeFilepath("../js/webapp/v2_view","get_html_reel.js", "document.getElementById('put_reel_html_here').innerHTML='"+clear(readFilepath("../js/html","reel.html"))+"'")
  

@@ -3,121 +3,114 @@ console.log("v2: view 2 view skin");
 /*------------------------------------------------------*/
 
 document.body.innerHTML=`
+<style>
+.my-code{
+  font-family:monospace;
+  font-size:0.7rem;
+  background-color:black;
+  padding:8px;
+  word-break:break-word;
+}
+</style>
 
 <div class="hero is-primary is-halfheight">
+
   <div class="hero-head">
     <nav class="navbar">
       <div class="container">
 	<div class="navbar-item">
 	  <a class="subtitle" href="https://saul11235.github.io/BulmaSkins/">BulmaSkins</a>
 	</div>
-
-	<div class="navbar-end"> <!--- BEGIN - NAVBAR-END -->
-
+	<div class="navbar-end">
 	  <div class="container block"> 
-	  <div id="bulmaskins-dropdown"></div>
-
-       </div>
-
-
-
-
-	</div> <!--- END NAVBAR-END -->
-
+            <div id="bulmaskins-dropdown"></div>
+          </div>
+	</div>
       </div>
     </nav>
-  </div>  <!-- END HERO-HEAD -->
+  </div> 
 
-  <div class="hero-body"> <!-- BEGIN HERO-BODY -->
+ <div class="hero-body">
 
- <!-- ----- -->
- <div class="container">
-
-   <div class="columns">
-     <div class="column is-10">
-
-      <div class="block">
-        <h1 id="label_skin_name" class="title" style="font-size:3rem;"> </h1>
-      </div>
-      <br/>
-
-     </div>
-     <div class="column is-2">
-
-        <!-- BulmaSkins-switch -->
-	<br/>
-        <div class="block">
-          <button id="BulmaSkins-switch" class="button ">
-            <div id="BulmaSkins-switch-light"> Light </div>
-            <div id="BulmaSkins-switch-dark" style="display:none"> Dark </div>
-          </button>
-        </div>
-	<!-- ----------------- -->
- 
-     </div>
-
+  <div class="container">
+   
+   <div class="container">
+     <br/>
+     <h1 id="label_skin_name" class="title" style="font-size:4.5rem;padding:30px;"> </h1>
    </div>
 
-
-     <!-- ---------------------------------------------- -->
-
-   <div class="columns">
-
-     <div class="column is-4">
-
-     <strong class="is-size-4">
+   <div class="columns is-multiline">
+     <div class="column is-4-desktop is-12-tablet">
+       <strong class="is-size-4">
           <span id="label-cdn"></span>
-     </strong> 
-
-    <div class="is-size-6 is-spaced is-is-outlined">
+       </strong> 
+       <div class="is-size-6 is-spaced is-is-outlined">
           <span id="label-light-cdn"></span>
           <button id="copy-light" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
-     </div> 
-     <div id="field-light" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
-     <div class="is-size-6">
+       </div> 
+       <div id="field-light" class="my-code"></div>
+       <div class="is-size-6">
           <span id="label-dark-cdn"></span>
           <button id="copy-dark" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
-     </div> 
-     <div id="field-dark" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
+       </div> 
+       <div id="field-dark" class="my-code"></div>
+       <br>
+       <div class="span">
+         <div class="field has-text-centered">
+           <a id="button_skin_github" class="button is-light" href="https://google.com">
+             <span id="label_skin_github"></span> 
+             <span class="icon"><i class="bi bi-github"></i></span>
+           </a>
+         </div>
+       </div>
 
-     <a id="button_skin_github" class="button is-light" href="https://google.com">
-       <span id="label_skin_github"></span> 
-       <span class="icon"><i class="bi bi-github"></i></span>
-     </a>
- 
      </div>
      <!-- ---------------------------------------------- -->
-     <div class="column is-8">
+     <div class="column is-8-desktop is-12-tablet">
 
         <strong class="is-size-4">
           <span id="label-switch-cdn"></span>
         </strong> 
 
-       <div class="columns">
+       <div class="columns is-multiline">
 	 <!-- ---------------------------------------------- -->
-	 <div class="column is-6">
+	 <div class="column is-6-desktop is-12-tablet">
 
      <div class="is-size-6">
           in head element:
           <button id="copy-head" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
      </div> 
-     <div id="field-head" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
+     <div id="field-head" class="my-code"></div>
      <div class="is-size-6">
            in end of body element:
            <button id="copy-body" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
       </div> 
-      <div id="field-body" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
+      <div id="field-body" class="my-code"></div>
 
 	 </div>
 
 	 <!-- ---------------------------------------------- -->
-	 <div class="column is-6">
+	 <div class="column is-6-desktop is-12-tablet">
 
      <div class="is-size-6">
           creating a button to manage the switch themes, in body:
           <button id="copy-button" class="icon button is-primary"><i class="bi bi-copy"></i></button> 
      </div> 
-     <div id="field-button" class="notification"  style="font-size:0.7rem;font-family:monospace;padding:8px;overflow-x:auto;white-space:nowrap;color:white;background-color:black;"></div>
+     <div id="field-button" class="my-code"></div>
+     <p> switch color in this template</p>
+
+     <br/>
+
+      <div class="field has-tex-centered"
+        <!-- BulmaSkins-switch -->
+        <div class="field has-text-centered">
+          <button id="BulmaSkins-switch" class="button ">
+            <div id="BulmaSkins-switch-light"> Light </div>
+            <div id="BulmaSkins-switch-dark" style="display:none"> Dark </div>
+          </button>
+        </div>
+       </div>	
+ 
 
 	 </div>
 

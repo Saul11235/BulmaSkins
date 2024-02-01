@@ -6,7 +6,7 @@ function config_dropdown() {
 var dropdown=document.getElementById("bulmaskins-dropdown");
 
 var text1=`
-<div class="dropdown is-hoverable">
+<div class="button dropdown is-hoverable is-primary">
   <div class="dropdown-trigger">
     <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu4">
       <span>XXX</span>
