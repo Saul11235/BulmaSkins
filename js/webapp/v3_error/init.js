@@ -8,7 +8,6 @@ document.body.innerHTML=`
      <div class="container has-text-centered">
        <h1 class="title">
          `+skin+` does not exists
-          <i class="bi bi-emoji-frown-fill"></i>
        </h1>
      </div>
   </div>

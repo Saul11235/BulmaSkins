@@ -30,7 +30,6 @@ function button_from_skin(nameSkin) {
 /*------------------------------------------------------*/
 
 var buttons="";
-console.log(arrayNameSkins);
 
 for (var i = 0; i < arrayNameSkins.length; i++) {
   buttons+=button_from_skin(arrayNameSkins[i]);
@@ -41,11 +40,17 @@ buttons='<div class="grid-container">'+buttons+'<div></div></div>'
 /*------------------------------------------------------*/
 
 
+
+/*------------------------------------------------------*/
+
 document.body.innerHTML=`
 <style>
+hr {
+  background-color: #606060;
+}
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 0px;
 }
 .grid-item {
@@ -54,113 +59,140 @@ document.body.innerHTML=`
   border: 1px solid gray;
   border-radius: 5px;
 }
-.notification {
+.blackcard{
   font-size:0.7rem;
   font-family:monospace;
-  overflow-x:auto;
-  white-space:nowrap;
+  padding:8px;
   color:white;
   background-color:black;
-  padding:8px;
+}
+..containerflex{
+  overflow-x:auto;
+  white-space:nowrap;
 }
 </style>
 
 <div class="hero is-dark is-fullheight">
  <div class="hero-body">
   <div class="container">
-   <div class="content">
-    <div class="title has-text-centered"> BulmaSkins </div>
+   <div class="block">
+    <div class="title has-text-centered is-1"> BulmaSkins </div>
     <p class="has-text-centered">
      BulmaSkins is a collection of themes created for Bulma, available via CDN, with light and dark options.
-     for example if we use the XXX skin
     </p> 
    </div>
+
    <div class="content">
-    <div class="field has-text-centered">
-      <a class="button is-link is-rounded" href="https://saul11235.github.io/BulmaSkins/?&skin=XXX">
-      <span>preview XXX</span>
-      <span class="icon"><i class="bi bi-globe"></i></span>
-      </a>
-      <br/><br/>
-    </div>
 
     <!-- ---------------------------------------------------- -->
+<hr>    
 <div class="container">
-<div class="columns">
- <div class="column is-4">
-    <h1 class="subtitle is-5">How to use:</h1>
-    <p>to config and use BulmaSkins you can use this from CDN, pick and view</p>
+<div class="columns is-multiline">
+
+ <div class="column is-12-tablet is-4-desktop">
+  <div class="container">
+   <h1 class="subtitle is-5"> How to use BulmaSkins, using for example XXX-skin:</h1>
+    <div class="field has-text-centered">
+        <a class="button is-link is-rounded" href="https://saul11235.github.io/BulmaSkins/?&skin=XXX">
+        <span>preview XXX</span>
+        <span class="icon"><i class="bi bi-globe"></i></span>
+        </a>
+    </div>
+    <p>to use XXX in your project via CDN </p>
     <div>
-     <span>XXX light theme via CDN</span>
-     <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+     <span>XXX-light via CDN</span>
+     <button id="copy-light" class="button icon is-dark"><i class="bi bi-copy"></i></button>
     </div>
-    <div id="field-light" class="notification">
-     &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css"&gt;
+    <div class="container">
+     <div id="field-light" class="blackcard">
+       <div class="containerflex">
+       &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css"&gt;
+       </div>
+     </div>
     </div>
     <div>
-     <span>XXX dark theme via CDN</span>
-     <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+     <span>XXX-dark via CDN</span>
+     <button id="copy-dark" class="button icon is-dark"><i class="bi bi-copy"></i></button>
     </div>
-    <div id="field-light" class="notification">
+    <div id="field-light" class="blackcard">
+    <div class="containerflex">
      &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css"&gt;
+     </div>
     </div>
-</div>    
-<div class="column is-8">
-    <h1 class="subtitle is-5">How to use whit an light/dark switch theme:</h1>
- <div class="columns">    
-   <div class="column is-6">
-    <div>
-     <span>in head element:</span>
-     <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
-    </div>
-    <div id="field-light" class="notification">
-     &lt;!-- begin BulmaSkins - XXX --&gt;
-     <br>&lt;link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css"&gt;
-     <br>&lt;link id="BulmaSkins-dark" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css"&gt;
-     <br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"&gt;&lt;/script&gt; 
-    </div>
-    <div>
-     <span>in end of body element</span>
-     <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
-    </div>
-    <div id="field-light" class="notification">
-     &lt;!-- end BulmaSkins --&gt;
-     <br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"&gt;&lt;/script&gt; 
-    </div>
+
+  </div>  
+ </div>    
+
+<div class="column is-12-tablet is-8-desktop">
+ <h1 class="subtitle is-5"> How to use BulmaSkins with a light/dark switch, using for example XXX-skin:</h1>
+ <div class="columns is-multiline">    
+
+   <div class="column is-12-tablet is-6-desktop ">
+    <div class="container">
+     <div>
+      <span>in head element:</span>
+      <button id="copy-head" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+     </div>
+     <div id="field-light" class="blackcard">
+     <div class="containerflex">
+      &lt;!-- begin BulmaSkins - XXX --&gt;
+      <br>&lt;link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css"&gt;
+      <br>&lt;link id="BulmaSkins-dark" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css"&gt;
+      <br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"&gt;&lt;/script&gt; 
+      </div>
+     </div>
+     <div>
+      <span>in end of body element</span>
+      <button id="copy-body" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+     </div>
+     <div id="field-light" class="blackcard">
+     <div class="containerflex">
+      &lt;!-- end BulmaSkins --&gt;
+      <br>&lt;script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"&gt;&lt;/script&gt; 
+      </div>
+     </div>
+    </div> 
    </div>
-   <div class="column is-6">
-   <div>
-     <span>creating a button to manage the switch themes, in body:</span>
-     <button id="b" class="button icon is-dark"><i class="bi bi-copy"></i></button>
-    </div>
-    <div id="field-light" class="notification">
-     &lt;!-- BulmaSkins-switch --&gt;
-     <br>&lt;button id="BulmaSkins-switch" class="button is-primary"&gt;
-     <br>&lt;div id="BulmaSkins-switch-light"&gt;
-     <br>Light
-     <br>&lt;/div&gt;
-     <br>&lt;div id="BulmaSkins-switch-dark" style="display:none"&gt;
-     <br>Dark
-     <br>&lt;/div&gt;
-     <br>&lt;/button&gt; 
-    </div>
-  </div> 
+
+   <div class="column is-12-tablet is-6-desktop ">
+    <div class=""container>
+     <div>
+      <span>creating a button to manage the switch themes, in body:</span>
+      <button id="copy-button" class="button icon is-dark"><i class="bi bi-copy"></i></button>
+     </div>
+     <div id="field-light" class="blackcard">
+     <div class="containerflex">
+      &lt;!-- BulmaSkins-switch --&gt;
+      <br>&lt;button id="BulmaSkins-switch" class="button is-primary"&gt;
+      <br>&lt;div id="BulmaSkins-switch-light"&gt;
+      <br>Light
+      <br>&lt;/div&gt;
+      <br>&lt;div id="BulmaSkins-switch-dark" style="display:none"&gt;
+      <br>Dark
+      <br>&lt;/div&gt;
+      <br>&lt;/button&gt; 
+      </div>
+     </div>
+    </div> 
+   </div>
   </div>
+
  </div>
 </div> <!-- end columns -->
 </div>
+<hr>    
     <!-- ---------------------------------------------------- -->
 
    </div>
    <h1 class="title">all skins:</h1>
-   <div class="block"><div class="block" id="BulmaSkins_all_skins"></div></div>
+
+   <div class="block">
+      <div class="content" id="BulmaSkins_all_skins"></div>
+   </div>
+
    <div class="block">
      <div class="content">
 
-       <h1 class="subtitle">About BulmaSkins</h1>
-       <p>BulmaSkins is a collection of skins based on Bulma, accompanied by minified CSS compiled and readily available via CDN. These skins offer a convenient and stylish way to enhance the visual appearance of your web projects.</p>
-       <h1 class="subtitle">Using saas</h1>
-       <p>BulmaSkins leverages the power of Sass (Syntactically Awesome Stylesheets) to provide a more organized and modular structure for styling. With Sass, developers can enjoy features like variables, nesting, and mixins, making the styling process more efficient and maintainable.</p>
        <h1 class="subtitle">why use BulmaSkins</h1>
         <ul>
 	 <li><strong> Effortless Integration: </strong> BulmaSkins seamlessly integrates with Bulma, a modern CSS framework, ensuring compatibility and ease of use in your web development projects. </li>
@@ -169,6 +201,19 @@ document.body.innerHTML=`
 	 <li><strong> Responsive Design: </strong> Built on the foundation of Bulma, BulmaSkins inherits its responsive design principles, ensuring that your web applications look great on various devices and screen sizes. </li>
 	 <li><strong> CDN Convenience: </strong> The availability of minified CSS files via CDN ensures fast and reliable delivery, enhancing the performance of your web pages. </li>
         </ul>
+       <h1 class="subtitle">About BulmaSkins</h1>
+       <p>
+          BulmaSkins is a collection of skins based on Bulma, accompanied by minified
+          CSS compiled and readily available via CDN. These skins offer a convenient
+	  and stylish way to enhance the visual appearance of your web projects.
+       </p>
+       <h1 class="subtitle">Using saas</h1>
+       <p>
+          BulmaSkins leverages the power of Sass (Syntactically Awesome Stylesheets)
+	  to provide a more organized and modular structure for styling.
+	  With Sass, developers can enjoy features like variables, nesting,
+	  and mixins, making the styling process more efficient and maintainable.
+       </p>
 
      </div>
    </div>
@@ -199,6 +244,14 @@ document.body.innerHTML=`
 var run_sensor=true;
 function DOM_sensor() {
   if (document.getElementById("footer-webapp")!=null){
+    /* config copy buttons*/
+    let nameSkin=random_skin;
+    document.getElementById("copy-light" ).addEventListener("click", function(){navigator.clipboard.writeText('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css">'.replace("XXX",nameSkin));});
+    document.getElementById("copy-dark"  ).addEventListener("click", function(){navigator.clipboard.writeText( '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css">'.replace("XXX",nameSkin));});
+    document.getElementById("copy-head"  ).addEventListener("click", function(){navigator.clipboard.writeText( `<!-- begin BulmaSkins - XXX -->\n<link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css">\n<link id="BulmaSkins-dark" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css">\n<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script> `.replace("XXX",nameSkin).replace("XXX",nameSkin).replace("XXX",nameSkin));});
+    document.getElementById("copy-button").addEventListener("click", function(){navigator.clipboard.writeText( `<!-- BulmaSkins-switch -->\n<button id="BulmaSkins-switch" class="button is-primary">\n  <div id="BulmaSkins-switch-light">\n    Light\n   </div>\n  <div id="BulmaSkins-switch-dark" style="display:none">\n    Dark\n  </div>\n</button> `);});
+    document.getElementById("copy-body"  ).addEventListener("click", function(){navigator.clipboard.writeText( `<!-- end BulmaSkins -->\n<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>`);});
+    /* config all button skins*/
     document.getElementById("BulmaSkins_all_skins").innerHTML=buttons; 
     run_sensor=false;	 
     };
