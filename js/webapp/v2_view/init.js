@@ -13,32 +13,20 @@ document.body.innerHTML=`
 }
 </style>
 
-<div class="hero is-primary is-halfheight">
-  <div class="block">
-  <div class="container">
-   <div class="navbar-end">
-     <div class="container block" style="position:absolute;"> 
-      <div id="bulmaskins-dropdown"></div>
-     </div>
-   </div>
-   </div>
-  </div>
+<div class="hero is-primary is-halfheight" style="padding-top:0px;">
 
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="container">
-	<div class="navbar-item">
-	  <a href="https://saul11235.github.io/BulmaSkins/">
-          <h1 id="label_skin_name" class="title" style="font-size:4.5rem;padding:30px;"> </h1>
-	  </a>
-	</div>
-      </div>
-    </nav>
-  </div> 
 
- <div class="hero-body">
+ <div class="hero-body" style="padding-top:0px;padding-bottom:25px;">
 
   <div class="container">
+    <div class="field has-text-right" style="position:relative;z-index:999;">
+        <div id="bulmaskins-dropdown"></div>
+    </div>
+    <div class="field has-text-centered">
+      <a href="https://saul11235.github.io/BulmaSkins/">
+         <h1 id="label_skin_name" class="title" style="font-size:4rem;padding:10px;"> </h1>
+      </a>
+   </div>
    <div class="columns is-multiline">
      <div class="column is-4-desktop is-12-tablet">
        <strong class="is-size-4">

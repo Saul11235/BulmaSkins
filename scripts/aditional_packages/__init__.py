@@ -118,7 +118,7 @@ def test_light_html(nameStyle):
     <a href="test.{nameStyle}.dark.html">view dark</a>
   </div></section>
   <div id="put_reel_html_here"></div>
-  <script src="../../js/html/get_html_reel.js"></script>
+  <script src="../../js/webapp/v2_view/get_html_reel.js"></script>
 </body>
 </html> """
 
@@ -140,7 +140,7 @@ def test_dark_html(nameStyle):
     <a href="test.{nameStyle}.light.html">view light</a>
   </div></section>
   <div id="put_reel_html_here"></div>
-  <script src="../../js/html/get_html_reel.js"></script>
+  <script src="../../js/webapp/v2_view/get_html_reel.js"></script>
 </body>
 </html> """ 
 #--------------------------------------------------------
