@@ -1,5 +1,12 @@
 console.log("v1: view 1 init");
 var random_skin=arrayNameSkins[ Math.floor(Math.random()*arrayNameSkins.length)];
+
+function go_to_random() {
+  let another_random_skin=arrayNameSkins[ Math.floor(Math.random()*arrayNameSkins.length)];
+  let url = "https://saul11235.github.io/BulmaSkins/?&skin="+another_random_skin;
+  window.location.href = url;
+}
+
 function button_from_skin(nameSkin) {
   return `
 <div class="block grid-item">
@@ -60,7 +67,9 @@ hr {
  <div class="hero-body">
   <div class="container">
    <div class="block">
-    <div class="title has-text-centered is-1"> BulmaSkins </div>
+    <div class="field has-text-centered">
+      <a id="bulmaskins-pick" class="title has-text-centered is-1"> BulmaSkins </a>
+    </div>
     <p class="has-text-centered">
      BulmaSkins is a collection of themes created for Bulma, available via CDN, with light and dark options.
     </p> 
@@ -182,6 +191,8 @@ function DOM_sensor() {
     document.getElementById("field-head"  ).innerText=`<!-- begin BulmaSkins - XXX -->\n<link id="BulmaSkins-light" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css">\n<link id="BulmaSkins-dark" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css">\n<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js"></script> `.replace("XXX",nameSkin).replace("XXX",nameSkin).replace("XXX",nameSkin);
     document.getElementById("field-button").innerText=`<!-- BulmaSkins-switch -->\n<button id="BulmaSkins-switch" class="button is-primary">\n  <div id="BulmaSkins-switch-light">\n    Light\n  </div>\n  <div id="BulmaSkins-switch-dark" style="display:none">\n    Dark\n  </div>\n</button> `;
     document.getElementById("field-body"  ).innerText=`<!-- end BulmaSkins -->\n<script src="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js"></script>`;
+    /*add random skin*/
+    document.getElementById("bulmaskins-pick").addEventListener("click",function(){go_to_random();});
     /* config copy buttons*/
     document.getElementById("copy-light" ).addEventListener("click", function(){navigator.clipboard.writeText('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.light.css">'.replace("XXX",nameSkin));});
     document.getElementById("copy-dark"  ).addEventListener("click", function(){navigator.clipboard.writeText( '<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/XXX.dark.css">'.replace("XXX",nameSkin));});
