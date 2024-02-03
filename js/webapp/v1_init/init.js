@@ -51,8 +51,20 @@ hr {
   font-size:0.7rem;
   background-color:black;
   padding:8px;
-  word-break:break-word;
+  white-space:nowrap;
+  overflow-x:auto;
 }
+::-webkit-scrollbar {
+    height: 12px; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #878787;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+    background-color: black; 
+}
+<
 </style>
 <div class="hero is-dark is-fullheight is-mobile">
  <div class="hero-body">
@@ -75,7 +87,6 @@ hr {
           <span class="icon"><i class="bi bi-globe"></i></span>
        </a>
      </div>
-     <p>to use XXX in your project via CDN </p>
      <div>
        <span>XXX-light via CDN</span>
        <button id="copy-light" class="button icon is-dark"><i class="bi bi-copy"></i></button>
