@@ -48,23 +48,13 @@ hr {
 }
 .my-code{
   font-family:monospace;
-  font-size:0.7rem;
+  font-size:0.6rem;
   background-color:black;
   padding:8px;
-  white-space:nowrap;
-  overflow-x:auto;
+  color:white;
+  text-wrap:wrap;
+  word-break:break-word;
 }
-::-webkit-scrollbar {
-    height: 12px; 
-}
-::-webkit-scrollbar-thumb {
-    background-color: #878787;
-    border-radius: 3px;
-}
-::-webkit-scrollbar-track {
-    background-color: black; 
-}
-<
 </style>
 <div class="hero is-dark is-fullheight is-mobile">
  <div class="hero-body">
@@ -77,7 +67,7 @@ hr {
    </div>
    <div class="content"><hr>
 <div class="container">
-  <div class="columns is-multiline">
+  <div class="columns is-multiline is-vcentered">
 <div class="column is-12-tablet is-4-desktop"><!-- column 1 -->
   <div class="container">
      <h1 class="subtitle is-5"> How to use BulmaSkins, using for example XXX-skin:</h1>
@@ -91,7 +81,7 @@ hr {
        <span>XXX-light via CDN</span>
        <button id="copy-light" class="button icon is-dark"><i class="bi bi-copy"></i></button>
      </div>
-       <div id="field-light" class="my-code"></div>
+     <div id="field-light" class="my-code" ></div>
      <div>
        <span>XXX-dark via CDN</span>
        <button id="copy-dark" class="button icon is-dark"><i class="bi bi-copy"></i></button>
@@ -101,7 +91,7 @@ hr {
 </div> <!-- end column 1 -->    
 <div class="column is-12-tablet is-8-desktop"> <!-- column 2 -->
   <h1 class="subtitle is-5"> How to use BulmaSkins with a light/dark switch, using for example XXX-skin:</h1>
-  <div class="columns is-multiline">    <!--begin subcolumns -->
+  <div class="columns is-multiline is-vcentered">    <!--begin subcolumns -->
 <div class="column is-12-tablet is-6-desktop "> <!-- subcol 2.1 -->
   <div class="container">
      <div>

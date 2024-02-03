@@ -6,22 +6,12 @@ document.body.innerHTML=`
 <style>
 .my-code{
   font-family:monospace;
-  font-size:0.7rem;
+  font-size:0.6rem;
   background-color:black;
   padding:8px;
-  white-space:nowrap;
-  overflow-x:scroll;
-  max-width:80vm;
-}
-::-webkit-scrollbar {
-    height: 12px; 
-}
-::-webkit-scrollbar-thumb {
-    background-color: #878787;
-    border-radius: 3px;
-}
-::-webkit-scrollbar-track {
-    background-color: black; /* color del track (fondo) */
+  color:white;
+  text-wrap:wrap;
+  word-break:break-word;
 }
 </style>
 
@@ -50,7 +40,7 @@ document.body.innerHTML=`
 
 
 
-      <div class="columns is-multiline">
+      <div class="columns is-multiline is-vcentered">
       <div class="column is-4-desktop is-12-tablet">
 
       <strong class="is-size-4">
@@ -89,7 +79,7 @@ document.body.innerHTML=`
       <span id="label-switch-cdn"></span>
     </strong> 
 
-  <div class="columns is-multiline">
+  <div class="columns is-multiline is-vcentered">
     <div class="column is-6-desktop is-12-tablet">
       <div class="is-size-6">
         in head element:
