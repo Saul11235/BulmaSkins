@@ -45,7 +45,7 @@ hr {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap:10px;
+  grid-gap:4px;
 }
 .grid-item {
   padding: 15px;
