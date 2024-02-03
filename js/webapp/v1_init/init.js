@@ -9,7 +9,7 @@ function go_to_random() {
 
 function button_from_skin(nameSkin) {
   return `
-<div class="block grid-item">
+<div class="grid-item">
  <div class="container has-text-centered is-centered">
   <div class="block">
     <a class="title" href="https://saul11235.github.io/BulmaSkins/?&skin=XXX">XXX</a>
@@ -45,11 +45,11 @@ hr {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 0px;
+  grid-gap:10px;
 }
 .grid-item {
-  padding: 20px;
-  margin: 4px;
+  padding: 15px;
+  margin: 0px;
   border: 1px solid gray;
   border-radius: 5px;
 }
@@ -159,6 +159,8 @@ hr {
      With Sass, developers can enjoy features like variables, nesting,
      and mixins, making the styling process more efficient and maintainable.
     </p>
+    <h1 class="subtitle">License</h1>
+    <p>Bulma Skins is built upon Bulma and incorporates Google Fonts. It is provided under the MIT license.</p>
   </div>
  </div>
 </div>
