@@ -3,6 +3,8 @@ console.log("v2: view 2 view skin");
 /*------------------------------------------------------*/
 
 document.body.innerHTML=`
+<style>#load-container{position:fixed;top:0;left:0;width:100%;height:100%;background-color:black;display:flex;align-items:center;justify-content:center;z-index:9999;}.load-item{border: 8px solid darkgray;border-top:8px solid black;border-radius: 50%;width: 50px;height: 50px;animation: spin 1s linear infinite;}@keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}</style>
+<div id="load-container"> <div class="load-item"></div></div> 
 <style>
 .my-code{
   font-family:monospace;

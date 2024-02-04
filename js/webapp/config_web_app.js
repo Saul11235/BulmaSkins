@@ -13,19 +13,26 @@ function add_script(path){
 if (skin!=null) {
   if (arrayNameSkins.includes(skin)){
      console.log("v2_view");
+     var dark_is_loaded=false;
+     var light_is_loaded=false;
      document.getElementById("BulmaSkins-light").setAttribute("href","https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/"+skin+".light.css");
      document.getElementById("BulmaSkins-dark" ).setAttribute("href","https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/css/"+skin+".dark.css");
      function config_view_skin() {
+       add_script("./js/webapp/v2_view/init.js");
        add_script("./js/webapp/v2_view/config_cdn_elements_in_dom.js");
        add_script("./js/webapp/v2_view/get_html_skin_dropdown.js");
-       add_script("./js/webapp/v2_view/init.js");
      };
     function config_style_view(){
+       document.getElementById("load-container").style.display="none";
+       add_script("https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/first.js");
        config_DOM();
        config_dropdown();
        add_script("./js/webapp/v2_view/get_html_reel.js");
        add_script("https://cdn.jsdelivr.net/gh/Saul11235/BulmaSkins@latest/js/cdn/last.js");
     };
+    /*sensor css files*/
+    document.getElementById("BulmaSkins-light").addEventListener("load",function(){light_is_loaded=true});
+    document.getElementById("BulmaSkins-dark" ).addEventListener("load",function(){dark_is_loaded=true});
     config_view_skin()
     /*DOM sensor*/
     var run_sensor=true;
