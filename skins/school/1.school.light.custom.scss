@@ -1,0 +1,33 @@
+//
+// custom school light style here
+//
+//---------------------------------------
+
+// font
+$family-sans-serif: "Arial", "Helvetica", sans-serif;
+$family-monospace: monospace ;
+
+
+$primary : blue;
+$link    : darkblue;
+$info    : cyan;
+$success : darkgreen;
+$warning : yellow;
+$danger  : red;
+$dark    : darkgrey;
+$text    : black;
+
+$colors: mergeColorMaps(
+   (
+   "white"  : ($white, $black),
+   "black"  : ($black, $white),
+   "light"  : ($light, $light-invert),
+   "dark"   : ($dark, $dark-invert), 
+   "primary": ($primary, $primary-invert, $primary-light, $primary-dark), 
+   "link"   : ($link, $link-invert, $link-light, $link-dark), 
+   "info"   : ($info, black, $info-light, $info-dark), 
+   "success": ($success, $success-invert, $success-light, $success-dark), 
+   "warning": ($warning, $warning-invert, $warning-light, $warning-dark), 
+   "danger" : ($danger, $danger-invert, $danger-light, $danger-dark)
+   ),
+   $custom-colors)
