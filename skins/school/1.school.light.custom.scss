@@ -4,6 +4,11 @@
 //---------------------------------------
 
 // font
+$family-primary: Arial;
+
+$body-background-color: white;
+$body-color: black;
+
 $family-sans-serif: "Arial", "Helvetica", sans-serif;
 $family-monospace: monospace ;
 
@@ -17,6 +22,7 @@ $danger  : red;
 $dark    : darkgrey;
 $text    : black;
 
+
 $colors: mergeColorMaps(
    (
    "white"  : ($white, $black),
@@ -25,7 +31,7 @@ $colors: mergeColorMaps(
    "dark"   : ($dark, $dark-invert), 
    "primary": ($primary, $primary-invert, $primary-light, $primary-dark), 
    "link"   : ($link, $link-invert, $link-light, $link-dark), 
-   "info"   : ($info, black, $info-light, $info-dark), 
+   "info"   : ($info, $info-invert, $info-light, $info-dark), 
    "success": ($success, $success-invert, $success-light, $success-dark), 
    "warning": ($warning, $warning-invert, $warning-light, $warning-dark), 
    "danger" : ($danger, $danger-invert, $danger-light, $danger-dark)
