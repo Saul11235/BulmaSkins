@@ -1,2 +1,2 @@
 // no code manually this file is generated
-var arrayNameSkins= ['school'];
+var arrayNameSkins= ['monoDark','school'];
